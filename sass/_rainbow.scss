@@ -1,0 +1,72 @@
+@import "config";
+
+// *** variables
+$center-size: 30;
+$ring-width: 5;
+
+// *** sass
+%ring {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+// !!!!!!!! rainbow !!!!!!!!
+.rainbow {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  // *** Note: use "* 1px" to add "px" to the end of SASS variable
+  width: $center-size * 1px;
+  height: $center-size * 1px;
+  margin-top: 50px;
+
+  // *** assign colors to the elements' border
+  @each $key, $color in $colors {
+    .#{$key}_ring {
+      @extend %ring;
+      // *** Note: use "* 1px" to add "px" to the end of SASS variable
+      border: $ring-width * 1px solid $color;
+    }
+  }
+
+  // *** assign size vaules and positions to the elements
+  @for $i from 1 through 6 {
+    .ring#{$i} {
+      // *** Note: use "* 1px" to add "px" to the end of SASS variable
+      width: ($center-size + ($ring-width * 2 * $i)) * 1px;
+      height: ($center-size + ($ring-width * 2 * $i)) * 1px;
+      top: (0 - ($ring-width * $i)) * 1px;
+      left: (0 - ($ring-width * $i)) * 1px;
+    }
+  }
+
+  .circle_text {
+    // *** rotate the whole .circle_text element
+    transform-origin: 15px 15px;
+    transform: rotate(-22deg);
+
+    span {
+      font-family: $mono-font;
+      font-size: 1.3rem;
+      position: absolute;
+      height: 50px;
+      width: 40px;
+      top: -35px;
+      left: -5px;
+      text-align: center;
+      transform-origin: bottom center;
+      color: #fff;
+      text-shadow: 0px 0px 2px blue;
+    }
+  }
+
+  // *** rotate every individual letters
+  @for $i from 1 through 16 {
+    .char#{$i} {
+      transform: rotate(360deg / 16 * $i);
+    }
+  }
+}

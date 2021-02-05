@@ -1,0 +1,403 @@
+// *** project_img::after bg color (Placeholder Selectors)
+%project-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -99;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: $radius;
+  transition: all 0.3s ease-in;
+}
+
+// *** focus_project image background
+%focus-project-img-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius;
+}
+
+// !!!!!!!! about !!!!!!!!
+.about {
+  transform: translateY(30px);
+  transition: all 0.3s ease-in;
+  opacity: 0;
+
+  .text_container {
+    display: flex;
+
+    .text_left,
+    .text_right {
+      width: 50%;
+      margin: $set-margin;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .skills {
+    background: lighten($main-color, 50%);
+    padding: 20px 30px;
+    border-radius: $radius;
+    margin: $set-margin;
+
+    h5 {
+      letter-spacing: 2px;
+      text-align: center;
+      color: $dark-color;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .skill_list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      span {
+        width: 20%;
+        margin-bottom: 10px;
+        color: darken($main-color, 10%);
+        // *** indent second line text
+        padding-left: 1rem;
+        text-indent: -1rem;
+
+        em {
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: bold;
+          margin-right: 3px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// *** add slide in effect
+.about.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// !!!!!!!! projects & other_projects !!!!!!!!
+.projects,
+.other_projects {
+  .project_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .project {
+      width: 50%;
+      padding: $item-padding;
+      margin-bottom: 80px;
+
+      .project_image {
+        border-radius: $radius;
+        position: relative;
+        margin-bottom: 30px;
+        // *** Note: flex makes .project_image size equal to it's image!
+        display: flex;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: $radius;
+        }
+      }
+
+      .project_image::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -98;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in;
+        content: "✦";
+        color: $light-color;
+        // *** align text content (✦) to the bottom right corner
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      a:hover .project_image::before {
+        top: 15px;
+        left: 13px;
+      }
+
+      // *** there are four project_image::after and each of them has their own background color
+      .project_image.bg_yellow::after {
+        background: $bg-yellow;
+        @extend %project-bg;
+      }
+      .project_image.bg_purple::after {
+        background: $bg-purple;
+        @extend %project-bg;
+      }
+      .project_image.bg_pink::after {
+        background: $bg-pink;
+        @extend %project-bg;
+      }
+      .project_image.bg_green::after {
+        background: $bg-green;
+        @extend %project-bg;
+      }
+      a:hover .project_image::after {
+        top: 15px;
+        left: 15px;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        color: $dark-color;
+      }
+      p {
+        color: lighten($dark-color, 40%);
+      }
+
+      .underline_container {
+        width: 100%;
+        text-align: right;
+
+        .underline {
+          display: inline;
+          position: relative;
+          overflow: hidden;
+
+          em {
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: bold;
+          }
+        }
+        .underline::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          width: 0;
+          bottom: -5px;
+          background: $dark-color;
+          height: 2px;
+          transition: width 0.3s ease-out;
+        }
+      }
+
+      a:hover .underline::after {
+        width: 100%;
+      }
+    }
+
+    // *** set last two .project margin-bottom value to zero
+    .project:nth-child(3),
+    .project:nth-child(4) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// !!!!!!!! other_projects !!!!!!!!
+.other_projects {
+  .project_list {
+    .project {
+      width: (100% / 3);
+      margin-bottom: 0;
+    }
+  }
+}
+
+// !!!!!!!! focus_project !!!!!!!!
+.focus_project {
+  .focus_project_intro_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .focus_project_intro_text {
+      width: 50%;
+      margin: $set-margin;
+    }
+    .focus_project_intro_links {
+      width: 50%;
+      margin: $set-margin;
+      text-align: center;
+
+      a {
+        line-height: 100px;
+        width: 100px;
+        display: inline-block;
+        border-radius: 100%;
+        background: lighten($main-color, 50%);
+        transition: all 0.3s ease-in;
+        position: relative;
+
+        i {
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          width: 30px;
+          line-height: 30px;
+          border-radius: 100%;
+          background: lighten($main-color, 50%);
+          color: $main-color;
+          // *** to align icon to the center
+          padding-left: 1px;
+        }
+      }
+      a:hover {
+        background: $main-color;
+        color: $light-color;
+      }
+      a:nth-child(2) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .focus_project_tech {
+    display: flex;
+    margin: $set-margin;
+    margin-bottom: 50px;
+
+    .focus_project_tech_list {
+      h6 {
+        border-bottom: 1px solid $dark-color;
+        padding: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      ul {
+        padding: 5px;
+      }
+    }
+    .focus_project_tech_list:nth-child(2) {
+      margin-left: 80px;
+    }
+  }
+
+  .focus_project_details {
+    display: flex;
+    margin-bottom: 50px;
+
+    h5 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+
+    .focus_project_details_left,
+    .focus_project_details_right {
+      width: 50%;
+      margin: $set-margin;
+    }
+
+    .focus_project_details_left.bg_yellow,
+    .focus_project_details_right.bg_yellow {
+      background: lighten($bg-yellow, 20%);
+      @extend %focus-project-img-bg;
+    }
+    .focus_project_details_left.bg_purple,
+    .focus_project_details_right.bg_purple {
+      background: lighten($bg-purple, 8%);
+      @extend %focus-project-img-bg;
+    }
+    .focus_project_details_left.bg_pink,
+    .focus_project_details_right.bg_pink {
+      background: lighten($bg-pink, 13%);
+      @extend %focus-project-img-bg;
+    }
+    .focus_project_details_left.bg_green,
+    .focus_project_details_right.bg_green {
+      background: lighten($bg-green, 20%);
+      @extend %focus-project-img-bg;
+    }
+  }
+
+  .focus_project_details.row_reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+// !!!!!!!! contact !!!!!!!!
+.contact {
+  .contact_container {
+    display: flex;
+    align-items: center;
+
+    .contact_text,
+    .contact_image {
+      width: 50%;
+      margin: $set-margin;
+    }
+
+    .contact_image {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .btn_container {
+      position: relative;
+      margin-bottom: 40px;
+
+      .icon {
+        position: absolute;
+        top: -13px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: lighten($main-color, 50%);
+        border-radius: 50%;
+        i {
+          color: $main-color;
+          font-size: 1.2rem;
+        }
+      }
+      a {
+        background: lighten($main-color, 50%);
+        padding: 5px 20px 5px 30px;
+        margin-left: 25px;
+        border-radius: 20px;
+        transition: all 0.3s ease-in;
+      }
+      a:hover {
+        background: $main-color;
+        color: $light-color;
+      }
+    }
+
+    .contact_image_container {
+      display: inline-block;
+      position: relative;
+
+      img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+      }
+      .rainbow_container {
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+      }
+    }
+  }
+}

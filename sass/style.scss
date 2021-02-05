@@ -1,0 +1,63 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $main-font;
+  color: $dark-color;
+  line-height: 1.6;
+  max-width: 1024px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  margin-bottom: $section-spacing;
+
+  h2 {
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    border: 1px solid $dark-color;
+    border-radius: 5px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: darken($main-color, 10%);
+  }
+}
+section:last-child {
+  margin-bottom: $section-spacing/3;
+}
+
+@import "header";
+@import "sun-moon";
+@import "main";
+@import "rainbow";
+@import "footer";
+@import "dark-mode";
+@import "responsive";

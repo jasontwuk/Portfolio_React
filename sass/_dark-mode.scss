@@ -1,0 +1,50 @@
+.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+
+  .greeting1 {
+    color: darken($yellow, 15%) !important;
+  }
+  .greeting2 {
+    color: darken($yellow, 10%) !important;
+  }
+  .greeting3 {
+    color: $yellow !important;
+  }
+  .intro_name {
+    h1 {
+      color: $light-color !important;
+    }
+  }
+  h2 {
+    border: 1px solid $light-color;
+  }
+
+  h3 {
+    color: lighten($main-color, 30%);
+  }
+
+  h4 {
+    color: $light-color !important;
+  }
+
+  a {
+    color: lighten($main-color, 10%);
+  }
+
+  .underline::after {
+    background: $light-color !important;
+  }
+
+  .dot {
+    background: $light-color !important;
+  }
+
+  .focus_project_tech {
+    .focus_project_tech_list {
+      h6 {
+        border-bottom: 1px solid $light-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// *** font-family
+$main-font: "Roboto", Arial, Helvetica, sans-serif;
+$secondary-font: "Nunito", sans-serif;
+$mono-font: "Ubuntu Mono", monospace;
+
+// *** colors
+$light-color: #fff;
+$dark-color: #333;
+
+$main-color: #1c75bc;
+
+$purple: rgb(173, 5, 245);
+$blue: rgb(0, 71, 250);
+$green: rgb(8, 157, 0);
+$yellow: rgb(255, 238, 0);
+$orange: rgb(255, 141, 0);
+$red: rgb(255, 0, 0);
+
+$colors: (
+  purple: $purple,
+  blue: $blue,
+  green: $green,
+  yellow: $yellow,
+  orange: $orange,
+  red: $red,
+);
+
+$bg-yellow: #fce179;
+$bg-purple: #cac8ff;
+$bg-pink: #ffabcd;
+$bg-green: #8de895;
+
+// *** other values
+$radius: 10px;
+$section-spacing: 150px;
+$item-padding: 0 20px;
+$set-margin: 0 20px;
+
+// *** display flex (Placeholder Selectors)
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

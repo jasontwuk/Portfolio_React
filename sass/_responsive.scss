@@ -1,0 +1,263 @@
+/* 768px and down */
+@media only screen and (max-width: 768px) {
+  // !!!!!!!! about !!!!!!!!
+  .about {
+    .skills {
+      .skill_list {
+        span {
+          width: (100% / 3);
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! other_projects !!!!!!!!
+  .other_projects {
+    .project_list {
+      .project {
+        width: (100% / 2);
+      }
+      .project:nth-child(1),
+      .project:nth-child(2) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+/* 600px and down */
+@media only screen and (max-width: 600px) {
+  // !!!!!!!! header !!!!!!!!
+  header {
+    .header_container {
+      margin: 30px 0 30px;
+    }
+
+    .intro {
+      display: block;
+      .intro_text {
+        width: 100%;
+
+        .intro_hello {
+          .greeting1 {
+            font-size: 1.2rem;
+          }
+          .greeting2 {
+            font-size: 1.5rem;
+          }
+          .greeting3 {
+            font-size: 1.8rem;
+          }
+        }
+        .intro_name {
+          margin-bottom: 50px;
+          h1 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .intro_portrait {
+        width: 100%;
+
+        img {
+          // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+          min-height: 250px;
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! section !!!!!!!!
+  section {
+    margin-bottom: 100px;
+  }
+
+  // !!!!!!!! about !!!!!!!!
+  .about {
+    transform: none;
+    transition: none;
+    opacity: 1;
+    .text_container {
+      display: block;
+
+      .text_left,
+      .text_right {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .skills {
+      padding: 20px;
+      margin: 0;
+
+      .skill_list {
+        span {
+          width: (100% / 2);
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! projects & other_projects !!!!!!!!
+  .projects,
+  .other_projects {
+    .project_list {
+      display: block;
+
+      .project {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px !important;
+
+        .project_image {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! focus_project !!!!!!!!
+  .focus_project {
+    .focus_project_intro_container {
+      display: block;
+
+      .focus_project_intro_text {
+        width: 100%;
+        margin: 0 0 30px;
+      }
+      .focus_project_intro_links {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .focus_project_tech {
+      display: block;
+      margin: 0 0 30px !important;
+
+      .focus_project_tech_list {
+        width: 100%;
+      }
+      .focus_project_tech_list:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+    .focus_project_tech_list:nth-child(2) {
+      margin-left: 0 !important;
+    }
+
+    .focus_project_details {
+      display: block;
+      margin-bottom: 30px;
+
+      .focus_project_details_left,
+      .focus_project_details_right {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  // !!!!!!!! contact !!!!!!!!
+  .contact {
+    .contact_container {
+      display: block;
+
+      .contact_text,
+      .contact_image {
+        width: 100%;
+        margin: 0;
+      }
+
+      .contact_image {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* 300px and down */
+@media only screen and (max-width: 300px) {
+  // !!!!!!!! header !!!!!!!!
+  header {
+    .intro {
+      .intro_text {
+        .intro_hello {
+          .greeting1 {
+            font-size: 1rem;
+          }
+          .greeting2 {
+            font-size: 1.2rem;
+          }
+          .greeting3 {
+            font-size: 1.4rem;
+          }
+        }
+        .intro_name {
+          h1 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .intro_portrait {
+        img {
+          // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+          min-height: 190px;
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! about !!!!!!!!
+  .about {
+    .skills {
+      .skill_list {
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! contact !!!!!!!!
+  .contact {
+    .contact_container {
+      .btn_container {
+        position: relative;
+        margin-bottom: 40px;
+
+        .icon {
+          top: -8px;
+          width: 40px;
+          height: 40px;
+          i {
+            font-size: 1rem;
+          }
+        }
+        a {
+          padding: 5px 10px 5px 22px;
+          margin-left: 20px;
+          font-size: 0.9rem;
+        }
+      }
+
+      .contact_image_container {
+        .rainbow_container {
+          right: 25px;
+        }
+      }
+    }
+  }
+
+  // !!!!!!!! focus_project !!!!!!!!
+  .focus_project {
+    .focus_project_intro_container {
+      .focus_project_intro_links {
+        a:nth-child(2) {
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+}
