@@ -1,13 +1,14 @@
 import logo from "./img/logo_blue.svg";
 import Media from "./Media";
 import SunMoon from "./SunMoon";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = ({ icons }) => {
   return (
     <div className="header_container" id="header_container">
-      <a href="index.html">
+      <Link to="/">
         <img src={logo} alt="logo" />
-      </a>
+      </Link>
 
       <div className="header_left">
         <SunMoon />

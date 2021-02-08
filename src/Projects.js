@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Projects = ({ projects }) => {
   return (
     <section className="projects">
@@ -6,7 +8,7 @@ const Projects = ({ projects }) => {
       <div className="project_list">
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <a href={project.link}>
+            <Link to={project.link}>
               <div className={`project_image ${project.class}`}>
                 <img src={project.img} alt={project.title} />
               </div>
@@ -17,7 +19,7 @@ const Projects = ({ projects }) => {
                   View Project <em>›</em>
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
