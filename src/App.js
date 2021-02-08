@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState } from "react";
+import { ScrollToTop } from "react-router-scroll-to-top";
 
 // components
 import HeaderContainer from "./HeaderContainer";
@@ -8,6 +9,11 @@ import Intro from "./Intro";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import FocusProject1 from "./FocusProject1";
+import FocusProject2 from "./FocusProject2";
+import FocusProject3 from "./FocusProject3";
+import FocusProject4 from "./FocusProject4";
+import OtherProjects from "./OtherProjects";
 
 // image
 import project_1 from "./img/projects/project_1.jpg";
@@ -22,7 +28,7 @@ const App = () => {
   const [projects] = useState([
     {
       title: "Weather Forecast App",
-      link: "weather_forecast_app.html",
+      link: "weather_forecast_app",
       class: "bg_yellow",
       img: `${project_1}`,
       text: "An app that shows today's and the future week's weather.",
@@ -30,7 +36,7 @@ const App = () => {
     },
     {
       title: "Budget App",
-      link: "budget_app.html",
+      link: "budget_app",
       class: "bg_purple",
       img: `${project_2}`,
       text: "This app helps users manage their budgets and expenses.",
@@ -38,7 +44,7 @@ const App = () => {
     },
     {
       title: "Slideshow",
-      link: "slideshow.html",
+      link: "slideshow",
       class: "bg_pink",
       img: `${project_3}`,
       text: "This is a responsive slideshow that is powered by JavaScript.",
@@ -46,7 +52,7 @@ const App = () => {
     },
     {
       title: "Sliding Forms",
-      link: "sliding_forms.html",
+      link: "sliding_forms",
       class: "bg_green",
       img: `${project_4}`,
       text: "'swup.js' is used in this project to create sliding effects.",
@@ -77,11 +83,12 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <header>
           <HeaderContainer icons={icons} />
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Intro />
               <Dots />
             </Route>
@@ -89,12 +96,28 @@ const App = () => {
         </header>
         <main>
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <About />
               <Projects projects={projects} />
-              <Contact icons={icons} />
+            </Route>
+            <Route path="/weather_forecast_app">
+              <FocusProject1 />
+              <OtherProjects projects={projects} id="1" />
+            </Route>
+            <Route path="/budget_app">
+              <FocusProject2 />
+              <OtherProjects projects={projects} id="2" />
+            </Route>
+            <Route path="/slideshow">
+              <FocusProject3 />
+              <OtherProjects projects={projects} id="3" />
+            </Route>
+            <Route path="/sliding_forms">
+              <FocusProject4 />
+              <OtherProjects projects={projects} id="4" />
             </Route>
           </Switch>
+          <Contact icons={icons} />
         </main>
 
         <footer>
