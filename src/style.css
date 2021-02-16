@@ -133,10 +133,6 @@ header .header_container .header_left .media a {
   transition: all 0.3s ease-in;
 }
 
-header .header_container .header_left .media a i {
-  margin-left: 1px;
-}
-
 header .header_container .header_left .media a:last-child {
   margin-bottom: 0;
 }
