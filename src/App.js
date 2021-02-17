@@ -74,8 +74,8 @@ const App = () => {
       id: 2,
     },
     {
-      name: "jasontwuk@gmail.com",
-      link: "mailto:jasontwuk@gmail.com",
+      name: "jasoncodeuk@gmail.com",
+      link: "mailto:jasoncodeuk@gmail.com",
       sign: faEnvelope,
       id: 3,
     },
