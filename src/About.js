@@ -62,7 +62,7 @@ const About = () => {
             <em>&#9900;</em>CSS
           </span>
           <span>
-            <em>&#9900;</em>SASS
+            <em>&#9900;</em>Sass
           </span>
           <span>
             <em>&#9900;</em>Bootstrap
