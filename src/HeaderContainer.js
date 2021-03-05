@@ -7,7 +7,14 @@ const HeaderContainer = ({ icons }) => {
   return (
     <div className="header_container" id="header_container">
       <Link to="/">
-        <img src={logo} alt="logo" />
+        <div className="header_right">
+          <img src={logo} alt="logo" />
+          <h3>
+            Jason
+            <br />
+            Liao
+          </h3>
+        </div>
       </Link>
 
       <div className="header_left">

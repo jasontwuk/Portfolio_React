@@ -8,6 +8,18 @@ header {
     margin: 50px 0 50px;
     font-weight: bold;
 
+    .header_right {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.5px;
+        align-items: center;
+      }
+    }
+
     .header_left {
       display: flex;
 
