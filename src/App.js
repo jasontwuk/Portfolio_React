@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState } from "react";
 import { ScrollToTop } from "react-router-scroll-to-top";
+import "./App.scss";
 
 // components
 import HeaderContainer from "./HeaderContainer";

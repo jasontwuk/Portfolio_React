@@ -1,4 +1,4 @@
-@import "config";
+@import "./styles/config";
 
 * {
   box-sizing: border-box;
@@ -50,10 +50,10 @@ section:last-child {
   margin-bottom: $section-spacing/3;
 }
 
-@import "header";
-@import "sun-moon";
-@import "main";
-@import "rainbow";
-@import "footer";
-@import "dark-mode";
-@import "responsive";
+@import "./styles/header";
+@import "./styles/sun-moon";
+@import "./styles/main";
+@import "./styles/rainbow";
+@import "./styles/footer";
+@import "./styles/dark-mode";
+@import "./styles/responsive";
