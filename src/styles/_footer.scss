@@ -3,8 +3,35 @@ footer {
   justify-content: center;
   margin-bottom: $section-spacing/3;
 
-  p {
+  section {
     font-size: 0.8rem;
     text-align: center;
+    a {
+      .underline_container {
+        display: inline-block;
+
+        .underline {
+          font-size: 0.8rem;
+          display: inline;
+          position: relative;
+          overflow: hidden;
+        }
+        .underline::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          width: 0;
+          bottom: -5px;
+          background: $dark-color;
+          height: 2px;
+          transition: width 0.3s ease-out;
+        }
+      }
+    }
+
+    a:hover .underline::after {
+      width: 100%;
+    }
   }
 }

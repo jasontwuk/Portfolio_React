@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState } from "react";
 import { ScrollToTop } from "react-router-scroll-to-top";
+import { Link } from "react-router-dom";
 import "./App.scss";
 
 // components
@@ -122,7 +123,15 @@ const App = () => {
         </main>
 
         <footer>
-          <p>© 2020 - present Jason Liao. All Rights Reserved.</p>
+          <section>
+            © 2020 - present&nbsp;
+            <Link to="/" title="Home - Jason Liao">
+              <div className="underline_container">
+                <span className="underline">Jason Liao</span>
+              </div>
+            </Link>
+            . All Rights Reserved.
+          </section>
         </footer>
       </div>
     </Router>
