@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HeaderContainer = ({ icons }) => {
   return (
     <div className="header_container" id="header_container">
-      <Link to="/">
+      <Link to="/" title="Home - Jason Liao">
         <div className="header_right">
           <img src={logo} alt="logo" />
           <h3>
