@@ -26,7 +26,14 @@ const Contact = ({ icons }) => {
                   </i>
                 </div>
 
-                <a href={icon.link}>{icon.name}</a>
+                <a
+                  href={icon.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={icon.id}
+                >
+                  {icon.name}
+                </a>
               </div>
             ))
             .reverse()}
