@@ -11,10 +11,15 @@ const FocusProject1 = () => {
       <div className="focus_project_intro_container">
         <div className="focus_project_intro_text">
           <p>
-            These are sign in and sign up forms. I used some sliding effects
-            from swup.js to swap between these two forms. You can click the
-            "sign in" and "sign up" buttons on the webpages to see how the
-            sliding effort works.
+            Sign in and sign up forms are essential for some websites, therefore
+            making them easy to use is an important task. I was thinking it
+            would be even better if I could make them more interesting. That’s
+            why I decided to add some sliding effects to them.
+          </p>
+          <p>
+            These sliding effects come from swup.js. You can click the "sign in"
+            and "sign up" buttons on the webpages to see how the sliding effects
+            work. The magic happens when the browser swaps these two web pages.
           </p>
         </div>
 
@@ -65,9 +70,11 @@ const FocusProject1 = () => {
         <div className="focus_project_details_right">
           <h5>Purpose and Goal</h5>
           <p>
-            Through building these forms I gained experience of using swup.js in
-            a project. I would like to apply this sort of sliding effect in
-            future projects.
+            By applying some sliding effects in this project, I believe it
+            becomes more interesting as well as providing a better user
+            experience. Through building these forms I wanted to gain experience
+            of using swup.js in the project. I would like to apply this type of
+            sliding effect in future projects.
           </p>
         </div>
       </div>
@@ -99,7 +106,8 @@ const FocusProject1 = () => {
           <p>
             I gained a solid knowledge of applying swup.js in this project. It
             also enhances my “transform property” and “transition property”
-            knowledge in CSS.
+            knowledge in CSS. Furthermore, I have a better understanding of how
+            to plan a user’s journey in this situation.
           </p>
         </div>
       </div>
