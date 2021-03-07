@@ -11,11 +11,16 @@ const FocusProject1 = () => {
       <div className="focus_project_intro_container">
         <div className="focus_project_intro_text">
           <p>
-            This web application let users set their budgets and keep track of
+            Trying to save money is not an easy task, especially when you spend
+            your money blindly. I decided to make a budget app that I would use,
+            because it will give its users more control of their spending.
+          </p>
+          <p>
+            This web application lets users set their budgets and keeps track of
             their expenses. Users can edit their budgets and add / delete /
             modify their expenses at any time. The balance number will turn red
             to indicate over spending, otherwise it will be green to show the
-            budget is still looking healthy.
+            budget is still healthy.
           </p>
         </div>
 
@@ -67,8 +72,8 @@ const FocusProject1 = () => {
           <p>
             The purpose of this project was to apply my JavaScript knowledge to
             build a practical web application. Through building this
-            application, I gained some real-world work experience and put ES6
-            syntax into practice.
+            application, I want to gain some real-world work experience and put
+            ES6 syntax into practice.
           </p>
         </div>
       </div>
@@ -84,8 +89,8 @@ const FocusProject1 = () => {
             It required a lot of JavaScript knowledge to build this application.
             To search and choose the appropriate method to complete this project
             was a challenging but also interesting process. I always have the
-            users in my mind when I build things, so making this app easier to
-            use was one of my top priorities.
+            users in my mind when I work on projects, so making this app easier
+            to use was one of my top priorities.
           </p>
         </div>
       </div>
