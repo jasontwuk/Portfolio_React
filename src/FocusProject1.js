@@ -11,6 +11,13 @@ const FocusProject1 = () => {
       <div className="focus_project_intro_container">
         <div className="focus_project_intro_text">
           <p>
+            Getting weather forecast information should be easy and
+            straightforward, but sometimes it is not the case with some UIs. In
+            this app, users can get the gist of today’s and the future week’s
+            weather at a glance, I believe it can fulfill most of the user’s
+            needs.
+          </p>
+          <p>
             In this project, I utilized OpenWeatherMap API to get the newest
             weather data and GoogleMap API to access geographic data. London is
             the default city, but users can change it to any city they like by
@@ -63,9 +70,9 @@ const FocusProject1 = () => {
           <h5>Purpose and Goal</h5>
           <p>
             The purpose of this project was to use third party APIs to build a
-            useful web application. I combined the power of the two APIs to make
-            it work. My goal was to get a better understanding of utilizing
-            third party APIs.
+            useful web application. I combined the power of the two APIs to
+            provide a better user experience. My goal was to get a better
+            understanding of utilizing third party APIs.
           </p>
         </div>
       </div>
@@ -98,7 +105,7 @@ const FocusProject1 = () => {
             This project helped to solidify my knowledge of utilizing third
             party APIs, such as how to fetch data from third parties and how to
             display the data in my app. To secure my OpenWeatherMap API key, I
-            put it inside of the server so no one else has access to it.
+            put it inside the server so no one else has access to it.
           </p>
         </div>
       </div>
