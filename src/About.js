@@ -16,16 +16,16 @@ const About = () => {
       <div className="text_container">
         <div className="text_left">
           <p>
-            I am a self-taught front-end developer who is passionate about using
-            my coding skills to build things.
+            Hi there! I’m Jason. I am a self-taught front-end developer who is
+            passionate about using my coding skills to build things.
           </p>
           <p>
             When I worked as a web designer years ago, I wanted to implement
-            some features (e.g. slider / carousel) in my designs, I looked
+            some features (e.g. slider / carousel) into my designs, I looked
             through some nice open sources and was amazed by them. I was not
             only surprised at how attractive they were, but also how many were
             free. I love the spirit of “one for all, all for one” in the
-            programming community, that is why I would love to be part of it.
+            programming community, which is why I would love to be part of it.
           </p>
         </div>
 
