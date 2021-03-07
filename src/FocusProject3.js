@@ -11,11 +11,17 @@ const FocusProject1 = () => {
       <div className="focus_project_intro_container">
         <div className="focus_project_intro_text">
           <p>
-            This is a responsive slideshow / carousel. This slideshow will auto
-            start running when the web page is loaded. When the user's mouse
-            hovers over the slide area or the control dots, the slideshow will
-            pause. When the user's mouse leaves the slide area or control dots,
-            the slideshow will start running again.
+            When I was a web designer years ago, I implemented other people’s
+            slideshows into my projects because it can be a great feature of a
+            website. Due to this I was very keen to learn how to build one, now
+            I can.
+          </p>
+          <p>
+            This responsive slideshow / carousel will auto start running when
+            the web page is loaded. When the user's mouse hovers over the slide
+            area or the control dots, the slideshow will pause. When the user's
+            mouse leaves the slide area or control dots, the slideshow will
+            start running again.
           </p>
         </div>
 
@@ -85,6 +91,10 @@ const FocusProject1 = () => {
             container's height was zero. Due to this, all the control buttons
             can't be vertically aligned properly. To fix this issue, I added a
             placeholder element with the first slide image in it.
+          </p>
+          <p>
+            For smaller devices, I provided smaller images (reduce images’s
+            width) to make the slideshow displays better in them.
           </p>
         </div>
       </div>
