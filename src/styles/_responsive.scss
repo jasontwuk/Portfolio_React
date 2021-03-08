@@ -1,5 +1,24 @@
 /* 768px and down */
 @media only screen and (max-width: 768px) {
+  // !!!!!!!! header !!!!!!!!
+  header {
+    .intro {
+      .intro_portrait {
+        .intro_portrait_container {
+          .intro_portrait_screen {
+            border-width: 3px;
+            border-radius: 5px;
+
+            span {
+              font-size: 0.6rem;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // !!!!!!!! about !!!!!!!!
   .about {
     .skills {
@@ -58,10 +77,16 @@
       }
       .intro_portrait {
         width: 100%;
+        // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+        min-height: 250px;
 
-        img {
-          // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
-          min-height: 250px;
+        .intro_portrait_container {
+          .intro_portrait_screen {
+            span {
+              font-size: 0.45rem;
+              margin-bottom: 10px;
+            }
+          }
         }
       }
     }
@@ -201,10 +226,8 @@
         }
       }
       .intro_portrait {
-        img {
-          // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
-          min-height: 190px;
-        }
+        // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+        min-height: 190px;
       }
     }
   }

@@ -116,24 +116,66 @@ header {
     }
 
     .intro_portrait {
+      display: flex;
+      align-items: center;
       width: 50%;
+      // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+      min-height: 407px;
 
-      img {
+      .intro_portrait_container {
+        position: relative;
         width: 100%;
-        height: auto;
-        // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
-        min-height: 407px;
-        padding: 0 10px;
         transform: translateY(30px);
         transition: all 0.3s ease-in;
         opacity: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          padding: 0 10px;
+        }
+        .intro_portrait_screen {
+          position: absolute;
+          top: 37%;
+          left: 21.5%;
+          height: 36%;
+          width: 57%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: rgba($color: #ffffff, $alpha: 0.5);
+          border: 4px solid #fff;
+          border-radius: 10px;
+          transform: rotateY(180deg);
+
+          span {
+            font-size: 0.7rem;
+            margin-bottom: 12px;
+            color: $main-color;
+          }
+          span:last-child {
+            margin-bottom: 0px;
+          }
+          .screen_code_1,
+          .screen_code_2,
+          .screen_code_3 {
+            opacity: 0;
+            transition: all 0.3s ease-in;
+          }
+          // *** add slide in effect
+          .screen_code_1.appear,
+          .screen_code_2.appear,
+          .screen_code_3.appear {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
       }
     }
-    .intro_portrait.appear {
-      img {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    .intro_portrait_container.appear {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
