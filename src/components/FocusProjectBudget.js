@@ -1,8 +1,8 @@
-import project_2_a from "../img/projects/project_2_a.png";
-import project_2_b from "../img/projects/project_2_b.png";
-import project_2_c from "../img/projects/project_2_c.png";
+import project_budget_a from "../img/projects/project_budget_a.png";
+import project_budget_b from "../img/projects/project_budget_b.png";
+import project_budget_c from "../img/projects/project_budget_c.png";
 
-const FocusProject1 = () => {
+const FocusProjectBudget = () => {
   return (
     <section className="focus_project">
       <h2>Project</h2>
@@ -64,7 +64,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_purple">
-          <img src={project_2_a} alt="budget app" />
+          <img src={project_budget_a} alt="budget app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -80,7 +80,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details row_reverse">
         <div className="focus_project_details_left bg_purple">
-          <img src={project_2_b} alt="budget app" />
+          <img src={project_budget_b} alt="budget app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -97,7 +97,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_purple">
-          <img src={project_2_c} alt="budget app" />
+          <img src={project_budget_c} alt="budget app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -114,4 +114,4 @@ const FocusProject1 = () => {
   );
 };
 
-export default FocusProject1;
+export default FocusProjectBudget;

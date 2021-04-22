@@ -1,8 +1,8 @@
-import project_1_a from "../img/projects/project_1_a.png";
-import project_1_b from "../img/projects/project_1_b.png";
-import project_1_c from "../img/projects/project_1_c.png";
+import project_weather_a from "../img/projects/project_weather_a.png";
+import project_weather_b from "../img/projects/project_weather_b.png";
+import project_weather_c from "../img/projects/project_weather_c.png";
 
-const FocusProject1 = () => {
+const FocusProjectWeather = () => {
   return (
     <section className="focus_project">
       <h2>Project</h2>
@@ -63,7 +63,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_yellow">
-          <img src={project_1_a} alt="weather forecast app" />
+          <img src={project_weather_a} alt="weather forecast app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -79,7 +79,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details row_reverse">
         <div className="focus_project_details_left bg_yellow">
-          <img src={project_1_b} alt="weather forecast app" />
+          <img src={project_weather_b} alt="weather forecast app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -96,7 +96,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_yellow">
-          <img src={project_1_c} alt="weather forecast app" />
+          <img src={project_weather_c} alt="weather forecast app" />
         </div>
 
         <div className="focus_project_details_right">
@@ -113,4 +113,4 @@ const FocusProject1 = () => {
   );
 };
 
-export default FocusProject1;
+export default FocusProjectWeather;

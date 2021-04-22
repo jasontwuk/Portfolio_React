@@ -1,8 +1,8 @@
-import project_3_a from "../img/projects/project_3_a.png";
-import project_3_b from "../img/projects/project_3_b.png";
-import project_3_c from "../img/projects/project_3_c.png";
+import project_slideshow_a from "../img/projects/project_slideshow_a.png";
+import project_slideshow_b from "../img/projects/project_slideshow_b.png";
+import project_slideshow_c from "../img/projects/project_slideshow_c.png";
 
-const FocusProject1 = () => {
+const FocusProjectSlideshow = () => {
   return (
     <section className="focus_project">
       <h2>Project</h2>
@@ -65,7 +65,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_pink">
-          <img src={project_3_a} alt="slideshow" />
+          <img src={project_slideshow_a} alt="slideshow" />
         </div>
 
         <div className="focus_project_details_right">
@@ -80,7 +80,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details row_reverse">
         <div className="focus_project_details_left bg_pink">
-          <img src={project_3_b} alt="slideshow" />
+          <img src={project_slideshow_b} alt="slideshow" />
         </div>
 
         <div className="focus_project_details_right">
@@ -101,7 +101,7 @@ const FocusProject1 = () => {
 
       <div className="focus_project_details">
         <div className="focus_project_details_left bg_pink">
-          <img src={project_3_c} alt="slideshow" />
+          <img src={project_slideshow_c} alt="slideshow" />
         </div>
 
         <div className="focus_project_details_right">
@@ -118,4 +118,4 @@ const FocusProject1 = () => {
   );
 };
 
-export default FocusProject1;
+export default FocusProjectSlideshow;

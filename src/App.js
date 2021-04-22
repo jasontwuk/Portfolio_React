@@ -11,17 +11,17 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import FocusProject1 from "./components/FocusProject1";
-import FocusProject2 from "./components/FocusProject2";
-import FocusProject3 from "./components/FocusProject3";
-import FocusProject4 from "./components/FocusProject4";
+import FocusProjectWeather from "./components/FocusProjectWeather";
+import FocusProjectBudget from "./components/FocusProjectBudget";
+import FocusProjectSlideshow from "./components/FocusProjectSlideshow";
+import FocusProjectForms from "./components/FocusProjectForms";
 import OtherProjects from "./components/OtherProjects";
 
 // image
-import project_1 from "./img/projects/project_1.jpg";
-import project_2 from "./img/projects/project_2.jpg";
-import project_3 from "./img/projects/project_3.jpg";
-import project_4 from "./img/projects/project_4.jpg";
+import project_weather from "./img/projects/project_weather.jpg";
+import project_budget from "./img/projects/project_budget.jpg";
+import project_slideshow from "./img/projects/project_slideshow.jpg";
+import project_forms from "./img/projects/project_forms.jpg";
 
 // font awesome
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -32,7 +32,7 @@ const App = () => {
       title: "Weather Forecast App",
       link: "weather_forecast_app",
       class: "bg_yellow",
-      img: `${project_1}`,
+      img: `${project_weather}`,
       text: "An app that shows today's and the future week's weather.",
       id: 1,
     },
@@ -40,7 +40,7 @@ const App = () => {
       title: "Budget App",
       link: "budget_app",
       class: "bg_purple",
-      img: `${project_2}`,
+      img: `${project_budget}`,
       text: "This app helps users manage their budgets and expenses.",
       id: 2,
     },
@@ -48,7 +48,7 @@ const App = () => {
       title: "Slideshow",
       link: "slideshow",
       class: "bg_pink",
-      img: `${project_3}`,
+      img: `${project_slideshow}`,
       text: "This is a responsive slideshow that is powered by JavaScript.",
       id: 3,
     },
@@ -56,7 +56,7 @@ const App = () => {
       title: "Sliding Forms",
       link: "sliding_forms",
       class: "bg_green",
-      img: `${project_4}`,
+      img: `${project_forms}`,
       text: "'swup.js' is used in this project to create sliding effects.",
       id: 4,
     },
@@ -103,19 +103,19 @@ const App = () => {
               <Projects projects={projects} />
             </Route>
             <Route path="/weather_forecast_app">
-              <FocusProject1 />
+              <FocusProjectWeather />
               <OtherProjects projects={projects} id="1" />
             </Route>
             <Route path="/budget_app">
-              <FocusProject2 />
+              <FocusProjectBudget />
               <OtherProjects projects={projects} id="2" />
             </Route>
             <Route path="/slideshow">
-              <FocusProject3 />
+              <FocusProjectSlideshow />
               <OtherProjects projects={projects} id="3" />
             </Route>
             <Route path="/sliding_forms">
-              <FocusProject4 />
+              <FocusProjectForms />
               <OtherProjects projects={projects} id="4" />
             </Route>
           </Switch>
