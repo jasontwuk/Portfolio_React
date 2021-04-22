@@ -1,10 +1,10 @@
-import Rainbow from "./Rainbow";
+import Rainbow from "../components/Rainbow";
 
 // font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // image
-import me from "./img/me.jpg";
+import me from "../img/me.jpg";
 
 const Contact = ({ icons }) => {
   return (

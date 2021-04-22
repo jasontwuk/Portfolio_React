@@ -1,4 +1,4 @@
-import portrait from "./img/portrait.svg";
+import portrait from "../img/portrait.svg";
 import { useEffect } from "react";
 
 const Intro = () => {

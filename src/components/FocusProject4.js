@@ -1,6 +1,6 @@
-import project_4_a from "./img/projects/project_4_a.png";
-import project_4_b from "./img/projects/project_4_b.png";
-import project_4_c from "./img/projects/project_4_c.png";
+import project_4_a from "../img/projects/project_4_a.png";
+import project_4_b from "../img/projects/project_4_b.png";
+import project_4_c from "../img/projects/project_4_c.png";
 
 const FocusProject1 = () => {
   return (

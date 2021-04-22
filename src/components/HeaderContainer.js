@@ -1,6 +1,6 @@
-import logo from "./img/logo_blue.svg";
-import Media from "./Media";
-import SunMoon from "./SunMoon";
+import logo from "../img/logo_blue.svg";
+import Media from "../components/Media";
+import SunMoon from "../components/SunMoon";
 import { Link } from "react-router-dom";
 
 const HeaderContainer = ({ icons }) => {

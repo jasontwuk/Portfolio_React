@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 import "./App.scss";
 
 // components
-import HeaderContainer from "./HeaderContainer";
-import Dots from "./Dots";
-import Intro from "./Intro";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import FocusProject1 from "./FocusProject1";
-import FocusProject2 from "./FocusProject2";
-import FocusProject3 from "./FocusProject3";
-import FocusProject4 from "./FocusProject4";
-import OtherProjects from "./OtherProjects";
+import HeaderContainer from "./components/HeaderContainer";
+import Dots from "./components/Dots";
+import Intro from "./components/Intro";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import FocusProject1 from "./components/FocusProject1";
+import FocusProject2 from "./components/FocusProject2";
+import FocusProject3 from "./components/FocusProject3";
+import FocusProject4 from "./components/FocusProject4";
+import OtherProjects from "./components/OtherProjects";
 
 // image
 import project_1 from "./img/projects/project_1.jpg";
