@@ -308,8 +308,11 @@
       width: 50%;
       margin: $set-margin;
 
-      p:nth-child(3) {
+      p {
         margin-top: 20px;
+      }
+      p:nth-of-type(1) {
+        margin-top: 0px;
       }
     }
 
