@@ -9,7 +9,7 @@ Live site: <https://www.jasoncode.dev/>
 - HTML5
 - CSS3
 - Sass
-- Vanilla JS
+- JavaScript ES6
 - React
 - Netlify
 
