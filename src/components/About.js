@@ -50,10 +50,10 @@ const About = () => {
             <em>&#9900;</em>JavaScript ES6
           </span>
           <span>
-            <em>&#9900;</em>JQuery
+            <em>&#9900;</em>React
           </span>
           <span>
-            <em>&#9900;</em>React
+            <em>&#9900;</em>Redux
           </span>
           <span>
             <em>&#9900;</em>HTML
@@ -62,13 +62,25 @@ const About = () => {
             <em>&#9900;</em>CSS
           </span>
           <span>
-            <em>&#9900;</em>Sass
+            <em>&#9900;</em>Git
+          </span>
+          <span>
+            <em>&#9900;</em>NPM packages
+          </span>
+          <span>
+            <em>&#9900;</em>Sass
+          </span>
+          <span>
+            <em>&#9900;</em>Tailwind
           </span>
           <span>
             <em>&#9900;</em>Bootstrap
           </span>
           <span>
-            <em>&#9900;</em>Git
+            <em>&#9900;</em>Storybook
+          </span>
+          <span>
+            <em>&#9900;</em>JQuery
           </span>
           <span>
             <em>&#9900;</em>WordPress
