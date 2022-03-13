@@ -16,8 +16,8 @@ const About = () => {
       <div className="text_container">
         <div className="text_left">
           <p>
-            Hi there! I’m Jason. I am a self-taught front-end developer who is
-            passionate about using my coding skills to build things.
+            Hi there! I’m Jason. I am a front-end developer who is
+            passionate about using my coding skills to build beautiful layouts.
           </p>
           <p>
             When I worked as a web designer years ago, I wanted to implement
@@ -25,7 +25,7 @@ const About = () => {
             through some nice open sources and was amazed by them. I was not
             only surprised at how attractive they were, but also how many were
             free. I love the spirit of “one for all, all for one” in the
-            programming community, which is why I would love to be part of it.
+            programming community, which is why I love being part of it.
           </p>
         </div>
 
@@ -33,12 +33,10 @@ const About = () => {
           <p>
             Since then, I’ve been honing my coding skills, especially
             JavaScript. Now, I have built my own slider (hooray) and other
-            projects. As I grow as a developer, I’m eager to add new skills to
-            my professional range.
+            projects. 
           </p>
           <p>
-            I am seeking a full-time role where I can contribute my skills to a
-            company and help them reach their goals.
+            As I grow as a developer, I thrive on creating responsive and user-friendly layouts from scratch, I'm also eager to add new skills to my professional range.
           </p>
         </div>
       </div>
