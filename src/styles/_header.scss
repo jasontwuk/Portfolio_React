@@ -119,7 +119,7 @@ header {
       display: flex;
       align-items: center;
       width: 50%;
-      // *** Note: add min-height value to fix a issue (header.offsetHeight is unstable) in script.js
+      // *** Note: add min-height value to fix an issue (header.offsetHeight is unstable) in script.js
       min-height: 407px;
 
       .intro_portrait_container {
