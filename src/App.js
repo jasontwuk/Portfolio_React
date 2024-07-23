@@ -71,7 +71,7 @@ const App = () => {
     },
     {
       name: "LinkedIn",
-      link: "http://www.linkedin.com/in/jasonliao-twuk",
+      link: "https://www.linkedin.com/in/jasonliaocode/",
       sign: ["fab", "linkedin-in"],
       id: 2,
     },
