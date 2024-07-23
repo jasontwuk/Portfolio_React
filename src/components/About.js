@@ -42,28 +42,13 @@ const About = () => {
       </div>
 
       <div className="skills">
-        <h5>My Skills</h5>
+        <h5>Skills & Competencies</h5>
         <div className="skill_list">
-          <span>
-            <em>&#9900;</em>JavaScript ES6
-          </span>
-          <span>
-            <em>&#9900;</em>React
-          </span>
-          <span>
-            <em>&#9900;</em>Redux
-          </span>
           <span>
             <em>&#9900;</em>HTML
           </span>
           <span>
             <em>&#9900;</em>CSS
-          </span>
-          <span>
-            <em>&#9900;</em>Git
-          </span>
-          <span>
-            <em>&#9900;</em>NPM packages
           </span>
           <span>
             <em>&#9900;</em>Sass
@@ -72,16 +57,31 @@ const About = () => {
             <em>&#9900;</em>Tailwind
           </span>
           <span>
-            <em>&#9900;</em>Bootstrap
+            <em>&#9900;</em>TypeScript
           </span>
           <span>
-            <em>&#9900;</em>Storybook
+            <em>&#9900;</em>React
+          </span>
+          <span>
+            <em>&#9900;</em>Redux
           </span>
           <span>
             <em>&#9900;</em>JQuery
           </span>
           <span>
-            <em>&#9900;</em>WordPress
+            <em>&#9900;</em>JavaScript ES6
+          </span>
+          <span>
+            <em>&#9900;</em>NPM packages
+          </span>
+          <span>
+            <em>&#9900;</em>Git
+          </span>
+          <span>
+            <em>&#9900;</em>MODX
+          </span>
+          <span>
+            <em>&#9900;</em>Storybook
           </span>
           <span>
             <em>&#9900;</em>Adobe Suite
