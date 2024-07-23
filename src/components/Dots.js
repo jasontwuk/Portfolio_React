@@ -50,47 +50,35 @@ const Dots = () => {
 
     // *** dots blinking effect
     const header = document.querySelector("header");
-    let addInterval = null;
+    let blinkInterval = null;
 
     const startBlinking = () => {
-       // console.log("start");
-      dotBlink();
-      addInterval = setInterval(dotBlink, 3000);
+      // console.log("mouse moving");
+      
+      if(!blinkInterval) {
+        // console.log("start");
+        dotBlink();
+        blinkInterval = setInterval(dotBlink, 3000);
+      }
     };
 
     const stopBlinking = () => {
-      if (addInterval) {
+      if (blinkInterval) {
         // console.log("stop");
-        clearInterval(addInterval);
-        addInterval = null;
+        clearInterval(blinkInterval);
+        blinkInterval = null;
       }
     };
 
     if (header) {
-      header.addEventListener("mouseenter", () => {
-        startBlinking();
-      });
+      header.addEventListener("mouseover", startBlinking);
       header.addEventListener("mouseleave", stopBlinking);
-    }
-
-
-    // *** In Safari, there is a display delay when switching between dark-mode and light-mode, so I added the following event listener to the sunMoonContainer...
-    const sunMoonContainer = document.getElementById("sun-moon-container");
-
-    if (sunMoonContainer) {
-      sunMoonContainer.addEventListener("mouseenter", stopBlinking);
-      sunMoonContainer.addEventListener("mouseleave", startBlinking);
     }
 
     return () => {
       if (header) {
-        header.removeEventListener("mouseenter", startBlinking);
+        header.removeEventListener("mouseover", startBlinking);
         header.removeEventListener("mouseleave", stopBlinking);
-      }
-
-      if (sunMoonContainer) {
-        sunMoonContainer.removeEventListener("mouseenter", stopBlinking);
-        sunMoonContainer.removeEventListener("mouseleave", startBlinking);
       }
 
       // *** Clear interval when the component unmounts
