@@ -116,6 +116,6 @@
 // *** for rotate rays of sunshine
 @for $i from 1 through 11 {
   .rotate#{$i} {
-    transform: rotate(360deg / 12 * $i);
+    transform: rotate(calc(360deg / 12) * $i);
   }
 }

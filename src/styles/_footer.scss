@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: center;
-  margin-bottom: $section-spacing/3;
+  margin-bottom: calc($section-spacing/3);
 
   section {
     font-size: 0.8rem;

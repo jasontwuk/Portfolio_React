@@ -24,7 +24,7 @@
     .skills {
       .skill_list {
         span {
-          width: (100% / 3);
+          width: calc(100% / 3);
         }
       }
     }
@@ -34,7 +34,7 @@
   .other_projects {
     .project_list {
       .project {
-        width: (100% / 2);
+        width: calc(100% / 2);
       }
       .project:nth-child(1),
       .project:nth-child(2) {
@@ -118,7 +118,7 @@
 
       .skill_list {
         span {
-          width: (100% / 2);
+          width: calc(100% / 2);
         }
       }
     }

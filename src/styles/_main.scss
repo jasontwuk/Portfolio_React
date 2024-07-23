@@ -207,7 +207,7 @@
 .other_projects {
   .project_list {
     .project {
-      width: (100% / 3);
+      width: calc(100% / 3);
       margin-bottom: 0;
     }
   }
