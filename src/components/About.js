@@ -60,6 +60,9 @@ const About = () => {
             <em>&#9900;</em>TypeScript
           </span>
           <span>
+            <em>&#9900;</em>Next.js
+          </span>
+          <span>
             <em>&#9900;</em>React
           </span>
           <span>
@@ -76,6 +79,9 @@ const About = () => {
           </span>
           <span>
             <em>&#9900;</em>Git
+          </span>
+          <span>
+            <em>&#9900;</em>Firebase
           </span>
           <span>
             <em>&#9900;</em>MODX
