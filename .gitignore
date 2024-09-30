@@ -25,3 +25,5 @@ yarn-error.log*
 .eslintcache
 sass
 original
+# Local Netlify folder
+.netlify

@@ -11,30 +11,38 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import FocusProjectToGoalx from "./components/FocusProjectToGoalx";
 import FocusProjectTracker from "./components/FocusProjectTracker";
 import FocusProjectWeather from "./components/FocusProjectWeather";
 import FocusProjectBudget from "./components/FocusProjectBudget";
-import FocusProjectSlideshow from "./components/FocusProjectSlideshow";
 import OtherProjects from "./components/OtherProjects";
 
 // image
+
+import project_togoalx from "./img/projects/project_togoalx.png";
 import project_tracker from "./img/projects/project_tracker.jpg";
 import project_weather from "./img/projects/project_weather.jpg";
 import project_budget from "./img/projects/project_budget.jpg";
-import project_slideshow from "./img/projects/project_slideshow.jpg";
 
 // font awesome
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
-  const [projects] = useState([
+    const [projects] = useState([{
+      title: "ToGoalx App",
+      link: "togoalx",
+      class: "bg_pink dropshadow",
+      img: `${project_togoalx}`,
+      text: "This app lets users create their achievement record and check on their daily and monthly progress.",
+      id: 1,
+    },
     {
       title: "Task Tracker App",
       link: "task_tracker_app",
       class: "bg_green",
       img: `${project_tracker}`,
       text: "This app helps users organize and track their tasks.",
-      id: 1,
+      id: 2,
     },
     {
       title: "Weather Forecast App",
@@ -42,7 +50,7 @@ const App = () => {
       class: "bg_yellow",
       img: `${project_weather}`,
       text: "An app that shows today's and the future week's weather.",
-      id: 2,
+      id: 3,
     },
     {
       title: "Budget App",
@@ -50,14 +58,6 @@ const App = () => {
       class: "bg_purple",
       img: `${project_budget}`,
       text: "This app helps users manage their budgets and expenses.",
-      id: 3,
-    },
-    {
-      title: "Slideshow",
-      link: "slideshow",
-      class: "bg_pink",
-      img: `${project_slideshow}`,
-      text: "This is a responsive slideshow that is powered by JavaScript.",
       id: 4,
     },
   ]);
@@ -102,20 +102,20 @@ const App = () => {
               <About />
               <Projects projects={projects} />
             </Route>
+            <Route path="/togoalx">
+              <FocusProjectToGoalx />
+              <OtherProjects projects={projects} id="1" />
+            </Route>
             <Route path="/task_tracker_app">
               <FocusProjectTracker />
-              <OtherProjects projects={projects} id="1" />
+              <OtherProjects projects={projects} id="2" />
             </Route>
             <Route path="/weather_forecast_app">
               <FocusProjectWeather />
-              <OtherProjects projects={projects} id="2" />
+              <OtherProjects projects={projects} id="3" />
             </Route>
             <Route path="/budget_app">
               <FocusProjectBudget />
-              <OtherProjects projects={projects} id="3" />
-            </Route>
-            <Route path="/slideshow">
-              <FocusProjectSlideshow />
               <OtherProjects projects={projects} id="4" />
             </Route>
           </Switch>
