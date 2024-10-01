@@ -49,6 +49,7 @@ const FocusProjectToGoalx = () => {
             <li>&#8901; HTML5</li>
             <li>&#8901; Tailwindcss</li>
             <li>&#8901; Firebase</li>
+            <li>&#8901; Netlify</li>
             <li>&#8901; Git</li>
           </ul>
         </div>
