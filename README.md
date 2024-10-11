@@ -2,7 +2,7 @@
 
 This is the React version of my personal portfolio site.
 
-Live site: <https://www.jasoncode.dev/>
+Live site: <https://jasoncode.netlify.app/>
 
 #### Used technologies
 
